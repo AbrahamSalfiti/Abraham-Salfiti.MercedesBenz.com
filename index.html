@@ -21,7 +21,6 @@
   .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
   .brand{display:flex;align-items:center;gap:10px}
   .logo{width:40px;height:40px;border-radius:999px;background:radial-gradient(circle at 30% 30%,#fff,#cfd4da 60%,#59616a);box-shadow:0 0 0 2px #2a303c inset;display:grid;place-items:center}
-  /* Student-made star (not official logo) */
   .logo svg{width:22px;height:22px;fill:#0b0c10;opacity:.95}
   .brand h1{margin:0;font-size:18px;letter-spacing:.4px}
   .menu{display:flex;gap:18px;flex-wrap:wrap}
@@ -74,8 +73,10 @@
   <!-- HERO -->
   <div class="hero">
     <div class="card">
-      <img class="card-img" loading="lazy"
-        src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Mercedes-Benz_Formula_One_Team_Showroom.jpg"
+      <!-- Try URL #1; if it fails, swap to URL #2 -->
+      <img class="card-img" loading="lazy" referrerpolicy="no-referrer"
+        src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Mercedes-Benz_Showroom_Stuttgart_-_interior.jpg"
+        onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/9/9e/Mercedes-Benz_Formula_One_Team_Showroom.jpg';"
         alt="Mercedes-Benz showroom hero"/>
       <div class="body">
         <h2>Discover Mercedes-Benz Excellence</h2>
@@ -101,23 +102,33 @@
     <p class="muted">Refined comfort, advanced tech, and executive presence.</p>
     <div class="grid">
       <div class="pcard">
-        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/81/Mercedes-Benz_C_300_AMG_Line_%28W206%29_%E2%80%93_f_26042024.jpg" alt="C-Class (W206)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/8/81/Mercedes-Benz_C_300_AMG_Line_%28W206%29_%E2%80%93_f_26042024.jpg"
+             alt="C-Class (W206)"/>
         <div class="body"><strong>C-Class Sedan (C200)</strong><p class="muted">1.5L turbo, MBUX, panoramic roof.</p><p class="price">AED 219,000</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Mercedes-Benz_E_300_Avantgarde_%28W214%29_%E2%80%93_f_09032024.jpg" alt="E-Class (W214)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Mercedes-Benz_E_300_Avantgarde_%28W214%29_%E2%80%93_f_09032024.jpg"
+             alt="E-Class (W214)"/>
         <div class="body"><strong>E-Class (E300)</strong><p class="muted">Mild-hybrid comfort, Burmester audio.</p><p class="price">AED 309,000</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/8/87/Mercedes-Benz_S_500_4MATIC_%28V223%29_%E2%80%93_f_21032021.jpg" alt="S-Class (W223)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/8/87/Mercedes-Benz_S_500_4MATIC_%28V223%29_%E2%80%93_f_21032021.jpg"
+             alt="S-Class (W223)"/>
         <div class="body"><strong>S-Class (S500)</strong><p class="muted">Luxury flagship, rear-seat lounge.</p><p class="price">AED 635,000</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/7/77/Mercedes-Benz_A_200_Sedan_%28V177%29_%E2%80%93_f_20190406.jpg" alt="A-Class Sedan (V177)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/7/77/Mercedes-Benz_A_200_Sedan_%28V177%29_%E2%80%93_f_20190406.jpg"
+             alt="A-Class Sedan (V177)"/>
         <div class="body"><strong>A-Class Sedan (A200)</strong><p class="muted">Compact luxury, smart safety.</p><p class="price">AED 162,000</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Mercedes-Maybach_S_580_4MATIC_%28Z223%29_%E2%80%93_f_19052021.jpg" alt="Mercedes-Maybach S580 (Z223)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Mercedes-Maybach_S_580_4MATIC_%28Z223%29_%E2%80%93_f_19052021.jpg"
+             alt="Mercedes-Maybach S580 (Z223)"/>
         <div class="body"><strong>Mercedes-Maybach S580</strong><p class="muted">Executive comfort, V8, massage seats.</p><p class="price">AED 885,000</p></div>
       </div>
     </div>
@@ -129,23 +140,38 @@
     <p class="muted">Space, style, and off-road confidence.</p>
     <div class="grid">
       <div class="pcard">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20M282%20H247%20GLA200.jpg" alt="GLA 200 (H247)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/0/03/Mercedes-Benz_GLA_200_AMG_Line_%28H247%29.jpg"
+             onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20M282%20H247%20GLA200.jpg';"
+             alt="GLA 200 (H247)"/>
         <div class="body"><strong>GLA 200</strong><p class="muted">Urban crossover, smart compact packaging.</p><p class="price">AED 179,000</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20X254%201X7A7049.jpg" alt="GLC 300 (X254)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Mercedes-Benz_GLC_300_4MATIC_%28X254%29.jpg"
+             onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20X254%201X7A7049.jpg';"
+             alt="GLC 300 (X254)"/>
         <div class="body"><strong>GLC 300</strong><p class="muted">Balanced performance, latest infotainment.</p><p class="price">AED 255,000</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20GLE%20450%204MATIC%20AMG%20Line%20W167%20Black%20%282%29.jpg" alt="GLE 450 (W167)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Mercedes-Benz_GLE_450_4MATIC_AMG_Line_%28W167%29.jpg"
+             onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20GLE%20450%204MATIC%20AMG%20Line%20W167%20Black%20%282%29.jpg';"
+             alt="GLE 450 (W167)"/>
         <div class="body"><strong>GLE 450</strong><p class="muted">3-row ready, air suspension comfort.</p><p class="price">AED 345,000</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20X167%20GLS%20580%204MATIC%20AMG%20Line%20Obsidian%20Black%20%282%29.jpg" alt="GLS 580 (X167)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Mercedes-Benz_GLS_580_4MATIC_%28X167%29.jpg"
+             onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20X167%20GLS%20580%204MATIC%20AMG%20Line%20Obsidian%20Black%20%282%29.jpg';"
+             alt="GLS 580 (X167)"/>
         <div class="body"><strong>GLS 580</strong><p class="muted">Luxury full-size, V8 power.</p><p class="price">AED 485,000</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20G63%20%28W463%29%20Miami%20Metro%20Area%2C%20USA.jpg" alt="G-Class (W463)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Mercedes-AMG_G_63_%28W463%29.jpg"
+             onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20G63%20%28W463%29%20Miami%20Metro%20Area%2C%20USA.jpg';"
+             alt="G-Class (W463)"/>
         <div class="body"><strong>G-Class (G 500)</strong><p class="muted">Iconic design, ultimate presence.</p><p class="price">AED 689,000</p></div>
       </div>
     </div>
@@ -157,23 +183,38 @@
     <p class="muted">Sporty silhouettes with open-top thrills.</p>
     <div class="grid">
       <div class="pcard">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20C-Klasse%20Coup%C3%A9%20%28C205%29%20C%20300%20%282020%29%20%2853322684801%29.jpg" alt="C-Class Coupe (C205)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Mercedes-Benz_C-Class_Coupe_%28C205%29_C_300.jpg"
+             onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20C-Klasse%20Coup%C3%A9%20%28C205%29%20C%20300%20%282020%29%20%2853322684801%29.jpg';"
+             alt="C-Class Coupe (C205)"/>
         <div class="body"><strong>C-Class Coupe</strong><p class="muted">Athletic stance, agile handling.</p><p class="price">AED 239,000</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/MERCEDES-BENZ%20E-CLASS%20COUPE%20%28C238%29%20China%20%285%29.jpg" alt="E-Class Coupe (C238)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/5/56/2017_Mercedes-Benz_E_300_Coupe_%28C238%29.jpg"
+             onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/MERCEDES-BENZ%20E-CLASS%20COUPE%20%28C238%29%20China%20%285%29.jpg';"
+             alt="E-Class Coupe (C238)"/>
         <div class="body"><strong>E-Class Coupe</strong><p class="muted">Elegant pillarless design.</p><p class="price">AED 315,000</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20SL%2063%204MATIC%2B%20%28R232%29.jpg" alt="SL Roadster (R232)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/5/57/Mercedes-AMG_SL_63_4MATIC%2B_%28R232%29.jpg"
+             onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20SL%2063%204MATIC%2B%20%28R232%29.jpg';"
+             alt="SL Roadster (R232)"/>
         <div class="body"><strong>SL Roadster</strong><p class="muted">Grand touring convertible.</p><p class="price">AED 599,000</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20C190%20GT%20R%20Pro%201X7A0090.jpg" alt="AMG GT (C190)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/5/58/Mercedes-AMG_GT_Coupe_%28C192%29.jpg"
+             onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20C190%20GT%20R%20Pro%201X7A0090.jpg';"
+             alt="AMG GT (C190)"/>
         <div class="body"><strong>AMG GT Coupe</strong><p class="muted">Front-mid V8, track heritage.</p><p class="price">AED 699,000</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20C-Klasse%20Cabriolet%20%28A%20205%29%20%E2%80%93%20Frontansicht%2C%2011.%20M%C3%A4rz%202018%2C%20Ratingen.jpg" alt="C-Class Cabriolet (A205)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Mercedes-Benz_C-Class_Cabriolet_%28A205%29.jpg"
+             onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20C-Klasse%20Cabriolet%20%28A%20205%29%20%E2%80%93%20Frontansicht%2C%2011.%20M%C3%A4rz%202018%2C%20Ratingen.jpg';"
+             alt="C-Class Cabriolet (A205)"/>
         <div class="body"><strong>Cabriolet (C300)</strong><p class="muted">Open-air luxury, 4-seater.</p><p class="price">AED 289,000</p></div>
       </div>
     </div>
@@ -185,23 +226,38 @@
     <p class="muted">Hand-crafted power and dynamic precision.</p>
     <div class="grid">
       <div class="pcard">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20C%2063%20S%20E%20Performance%20%28W206%29%20front.jpg" alt="AMG C63 S (W206)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mercedes-AMG_C_63_S_E_Performance_%28W206%29.jpg"
+             onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20C%2063%20S%20E%20Performance%20%28W206%29%20front.jpg';"
+             alt="AMG C63 S (W206)"/>
         <div class="body"><strong>AMG C63 S</strong><p class="muted">Performance seats, drift mode.</p><p class="price">AED 395,000</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20E63%20S%204MATIC%2B%20%28W213%29.jpg" alt="AMG E63 S (W213)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Mercedes-AMG_E_63_S_4MATIC%2B_%28W213%29.jpg"
+             onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20E63%20S%204MATIC%2B%20%28W213%29.jpg';"
+             alt="AMG E63 S (W213)"/>
         <div class="body"><strong>AMG E63 S</strong><p class="muted">4MATIC+, super-saloon thrills.</p><p class="price">AED 525,000</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20G%2063%20W463%20Black%20%286%29.jpg" alt="AMG G63 (W463)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/4/47/Mercedes-AMG_G_63_%28W463%29_2019.jpg"
+             onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20G%2063%20W463%20Black%20%286%29.jpg';"
+             alt="AMG G63 (W463)"/>
         <div class="body"><strong>AMG G63</strong><p class="muted">Twin-turbo V8, iconic box stance.</p><p class="price">AED 839,000</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20A%2045%20S%204MATIC%2B%20%28W177%29%201X7A0310.jpg" alt="AMG A45 S (W177)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/d/da/Mercedes-AMG_A_45_S_4MATIC%2B_%28W177%29.jpg"
+             onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20A%2045%20S%204MATIC%2B%20%28W177%29%201X7A0310.jpg';"
+             alt="AMG A45 S (W177)"/>
         <div class="body"><strong>AMG A45 S</strong><p class="muted">Record-breaking 2.0L turbo.</p><p class="price">AED 289,000</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20GT%2043%204dr%20X290%20white%20%284%29.jpg" alt="AMG GT 4-Door (X290)"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Mercedes-AMG_GT_43_4MATIC%2B_4-Door_Coupe_%28X290%29.jpg"
+             onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20GT%2043%204dr%20X290%20white%20%284%29.jpg';"
+             alt="AMG GT 4-Door (X290)"/>
         <div class="body"><strong>AMG GT 4-Door</strong><p class="muted">Supercar soul, 4-seat practicality.</p><p class="price">AED 649,000</p></div>
       </div>
     </div>
@@ -213,23 +269,33 @@
     <p class="muted">Genuine add-ons and care plans for peace of mind.</p>
     <div class="grid">
       <div class="pcard">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1515920010269-5c75f7c0c9e1?q=80&w=1200&auto=format&fit=crop" alt="AMG Floor Mats"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://images.unsplash.com/photo-1515920010269-5c75f7c0c9e1?q=80&w=1200&auto=format&fit=crop"
+             alt="AMG Floor Mats"/>
         <div class="body"><strong>AMG Floor Mats (Set)</strong><p class="muted">Premium velour, red stitching.</p><p class="price">AED 750</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1616789914319-0d7de47eb9f1?q=80&w=1200&auto=format&fit=crop" alt="19-inch Alloy Rim"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://images.unsplash.com/photo-1616789914319-0d7de47eb9f1?q=80&w=1200&auto=format&fit=crop"
+             alt="19-inch Alloy Rim"/>
         <div class="body"><strong>19-inch Alloy Rim</strong><p class="muted">Twin-spoke, diamond-cut finish.</p><p class="price">AED 2,950</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1542367597-8849ebf6b1b9?q=80&w=1200&auto=format&fit=crop" alt="Car Cover"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://images.unsplash.com/photo-1542367597-8849ebf6b1b9?q=80&w=1200&auto=format&fit=crop"
+             alt="Car Cover"/>
         <div class="body"><strong>Breathable Car Cover</strong><p class="muted">Indoor dust protection, custom fit.</p><p class="price">AED 580</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1543465077-db45d34b88a5?q=80&w=1200&auto=format&fit=crop" alt="Service Plan"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://images.unsplash.com/photo-1543465077-db45d34b88a5?q=80&w=1200&auto=format&fit=crop"
+             alt="Service Plan"/>
         <div class="body"><strong>2-Year Service Plan</strong><p class="muted">Scheduled maintenance, OEM parts.</p><p class="price">AED 4,900</p></div>
       </div>
       <div class="pcard">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop" alt="Detailing"/>
+        <img loading="lazy" referrerpolicy="no-referrer"
+             src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop"
+             alt="Detailing"/>
         <div class="body"><strong>AMG Detailing Package</strong><p class="muted">Ceramic coat, interior deep clean.</p><p class="price">AED 1,450</p></div>
       </div>
     </div>
@@ -277,7 +343,7 @@
     <h2>Terms & Conditions</h2>
     <div class="card" style="padding:16px">
       <p><strong>Academic Demo:</strong> This website is a student project. No payments or deliveries are processed. All prices shown are illustrative.</p>
-      <p><strong>Intellectual Property:</strong> Mercedes-Benz and AMG are trademarks of their respective owners. Images here are used for educational demonstration. When submitting, cite your image sources in the report.</p>
+      <p><strong>Intellectual Property:</strong> Mercedes-Benz and AMG are trademarks of their respective owners. Images are used for educational demonstration. Cite your image sources in the report.</p>
       <p><strong>Use of Content:</strong> Do not reuse outside coursework without permission.</p>
       <p><strong>Limitation of Liability:</strong> Information is provided “as is” without warranties.</p>
     </div>
