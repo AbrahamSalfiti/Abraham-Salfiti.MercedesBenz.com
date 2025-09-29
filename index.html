@@ -9,9 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --bg:#0b0c10; --card:#111218; --muted:#9aa0a6; --text:#f5f7fb; --brand:#d0d5db; --accent:#e5e7eb; --link:#cbd5e1; --ok:#10b981;
-    }
+    :root{ --bg:#0b0c10; --card:#111218; --muted:#9aa0a6; --text:#f5f7fb; --brand:#d0d5db; --accent:#e5e7eb; --link:#cbd5e1; --ok:#10b981; }
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
     a{color:var(--link);text-decoration:none}
@@ -38,7 +36,7 @@
     h2{margin:0 0 14px;font-size:26px}
     .grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
     .card{background:var(--card);border:1px solid #1c2230;border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
-    .card img{width:100%;height:150px;object-fit:cover}
+    .card img{width:100%;height:150px;object-fit:cover;background:#0b0c10}
     .card .body{padding:12px}
     .price{margin:6px 0 0;font-weight:800}
     .muted{color:var(--muted);font-size:12px}
@@ -59,21 +57,11 @@
   <header>
     <div class="wrap nav">
       <div class="brand">
-        <!-- Authentic Mercedes-Benz three-pointed star (inline SVG) -->
+        <!-- Simplified emblem for educational use -->
         <div class="logo" title="Mercedes-Benz">
-          <!-- Simple geometric star emblem for educational use -->
-          <svg viewBox="0 0 64 64" aria-hidden="true" role="img" focusable="false">
-            <circle cx="32" cy="32" r="30" fill="none" stroke="#0b0c10" stroke-width="4"/>
-            <path d="M32 8 L32 34 L48 44 Z" />
-            <path d="M32 34 L16 44 L32 8 Z" />
-            <path d="M32 34 L48 44 L16 44 Z" style="display:none"/>
-            <path d="M32 34 L16 44 L48 44 Z" fill="none"/>
-            <path d="M32 34 L48 44 L16 44 Z" fill="none"/>
-            <path d="M32 34 L48 44 L16 44 Z" fill="none"/>
-            <!-- three blades -->
-            <path d="M32 11 L32 33" stroke="#0b0c10" stroke-width="4" stroke-linecap="round"/>
-            <path d="M32 33 L46 42" stroke="#0b0c10" stroke-width="4" stroke-linecap="round"/>
-            <path d="M32 33 L18 42" stroke="#0b0c10" stroke-width="4" stroke-linecap="round"/>
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="28" fill="none" stroke="#0b0c10" stroke-width="4"/>
+            <path d="M32 14 L32 34 M32 34 L48 42 M32 34 L16 42" stroke="#0b0c10" stroke-width="4" stroke-linecap="round"/>
           </svg>
         </div>
         <h1>MB Luxury Motors</h1>
@@ -96,8 +84,8 @@
   <main id="home" class="wrap">
     <div class="hero">
       <div class="card">
-        <!-- HERO IMAGE (replace with official MB hero photo saved locally) -->
-        <img src="/assets/mb-hero-showroom.jpg" alt="Mercedes-Benz showroom hero"/>
+        <!-- HERO -->
+        <img src="assets/mb-hero-showroom.jpg" alt="Mercedes-Benz showroom hero" onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'"/>
         <div class="copy">
           <h2>Discover Mercedes-Benz Excellence</h2>
           <p class="muted">Explore our curated selection of Mercedes-Benz vehicles—where performance meets luxury. Shop sedans, SUVs, coupes, AMG models, and genuine accessories. Student project demo site for academic purposes only.</p>
@@ -124,7 +112,8 @@
       <p class="muted">Refined comfort, advanced tech, and executive presence.</p>
       <div class="grid">
         <div class="card">
-          <img src="/assets/sedans/c-class-w206-c200.jpg" alt="C-Class Sedan (W206)"/>
+          <img src="assets/sedans/c-class-w206-c200.jpg" alt="C-Class Sedan (W206) C200"
+               onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>C-Class Sedan (C200)</strong>
             <p class="muted">1.5L turbo, MBUX, panoramic roof.</p>
@@ -132,7 +121,8 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/sedans/e-class-w214-e300.jpg" alt="E-Class (W214)"/>
+          <img src="assets/sedans/e-class-w214-e300.jpg" alt="E-Class (W214) E300"
+               onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>E-Class (E300)</strong>
             <p class="muted">Mild-hybrid comfort, Burmester audio.</p>
@@ -140,7 +130,8 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/sedans/s-class-w223-s500.jpg" alt="S-Class (W223)"/>
+          <img src="assets/sedans/s-class-w223-s500.jpg" alt="S-Class (W223) S500"
+               onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>S-Class (S500)</strong>
             <p class="muted">Luxury flagship, rear-seat lounge.</p>
@@ -148,7 +139,8 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/sedans/a-class-v177-a200.jpg" alt="A-Class Sedan (V177)"/>
+          <img src="assets/sedans/a-class-v177-a200.jpg" alt="A-Class Sedan (V177) A200"
+               onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>A-Class Sedan (A200)</strong>
             <p class="muted">Compact luxury, smart safety.</p>
@@ -156,7 +148,8 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/sedans/maybach-s580-z223.jpg" alt="Mercedes-Maybach S580"/>
+          <img src="assets/sedans/maybach-z223-s580.jpg" alt="Mercedes-Maybach S580 (Z223)"
+               onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>Mercedes-Maybach S580</strong>
             <p class="muted">Executive comfort, V8, massage seats.</p>
@@ -172,7 +165,7 @@
       <p class="muted">Space, style, and off-road confidence.</p>
       <div class="grid">
         <div class="card">
-          <img src="/assets/suvs/gla-h247-200.jpg" alt="GLA 200 (H247)"/>
+          <img src="assets/suvs/gla-h247-200.jpg" alt="GLA 200 (H247)" onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>GLA 200</strong>
             <p class="muted">Urban crossover, smart compact packaging.</p>
@@ -180,7 +173,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/suvs/glc-x254-300.jpg" alt="GLC 300 (X254)"/>
+          <img src="assets/suvs/glc-x254-300.jpg" alt="GLC 300 (X254)" onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>GLC 300</strong>
             <p class="muted">Balanced performance, latest infotainment.</p>
@@ -188,7 +181,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/suvs/gle-w167-450.jpg" alt="GLE 450 (W167)"/>
+          <img src="assets/suvs/gle-w167-450.jpg" alt="GLE 450 (W167)" onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>GLE 450</strong>
             <p class="muted">3-row ready, air suspension comfort.</p>
@@ -196,7 +189,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/suvs/gls-x167-580.jpg" alt="GLS 580 (X167)"/>
+          <img src="assets/suvs/gls-x167-580.jpg" alt="GLS 580 (X167)" onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>GLS 580</strong>
             <p class="muted">Luxury full-size, V8 power.</p>
@@ -204,7 +197,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/suvs/g-class-w463-g500.jpg" alt="G-Class (W463)"/>
+          <img src="assets/suvs/g-class-w463-g500.jpg" alt="G-Class (W463) G 500" onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>G-Class (G 500)</strong>
             <p class="muted">Iconic design, ultimate presence.</p>
@@ -220,7 +213,7 @@
       <p class="muted">Sporty silhouettes with open-top thrills.</p>
       <div class="grid">
         <div class="card">
-          <img src="/assets/coupes/c-class-coupe-c205.jpg" alt="C-Class Coupe (C205)"/>
+          <img src="assets/coupes/c-class-coupe-c205.jpg" alt="C-Class Coupe (C205)" onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>C-Class Coupe</strong>
             <p class="muted">Athletic stance, agile handling.</p>
@@ -228,7 +221,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/coupes/e-class-coupe-c238.jpg" alt="E-Class Coupe (C238)"/>
+          <img src="assets/coupes/e-class-coupe-c238.jpg" alt="E-Class Coupe (C238)" onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>E-Class Coupe</strong>
             <p class="muted">Elegant pillarless design.</p>
@@ -236,7 +229,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/coupes/sl-roadster-r232.jpg" alt="SL Roadster (R232)"/>
+          <img src="assets/coupes/sl-roadster-r232.jpg" alt="SL Roadster (R232)" onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>SL Roadster</strong>
             <p class="muted">Grand touring convertible.</p>
@@ -244,7 +237,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/coupes/amg-gt-c190.jpg" alt="AMG GT (C190)"/>
+          <img src="assets/coupes/amg-gt-c190.jpg" alt="AMG GT Coupe (C190)" onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>AMG GT Coupe</strong>
             <p class="muted">Front-mid V8, track heritage.</p>
@@ -252,7 +245,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/coupes/c-class-cabriolet-a205.jpg" alt="C-Class Cabriolet (A205)"/>
+          <img src="assets/coupes/c-class-cabriolet-a205.jpg" alt="C-Class Cabriolet (A205)" onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>Cabriolet (C300)</strong>
             <p class="muted">Open-air luxury, 4-seater.</p>
@@ -268,7 +261,7 @@
       <p class="muted">Hand-crafted power and dynamic precision.</p>
       <div class="grid">
         <div class="card">
-          <img src="/assets/amg/amg-c63s-w206.jpg" alt="Mercedes-AMG C 63 S E PERFORMANCE (W206)"/>
+          <img src="assets/amg/amg-c63s-w206.jpg" alt="Mercedes-AMG C 63 S E PERFORMANCE (W206)" onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>AMG C63 S</strong>
             <p class="muted">Performance seats, drift mode.</p>
@@ -276,7 +269,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/amg/amg-e63s-w213.jpg" alt="Mercedes-AMG E 63 S (W213)"/>
+          <img src="assets/amg/amg-e63s-w213.jpg" alt="Mercedes-AMG E 63 S (W213)" onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>AMG E63 S</strong>
             <p class="muted">4MATIC+, super-saloon thrills.</p>
@@ -284,7 +277,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/amg/amg-g63-w463.jpg" alt="Mercedes-AMG G 63 (W463)"/>
+          <img src="assets/amg/amg-g63-w463.jpg" alt="Mercedes-AMG G 63 (W463)" onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>AMG G63</strong>
             <p class="muted">Twin-turbo V8, iconic box stance.</p>
@@ -292,7 +285,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/amg/amg-a45s-w177.jpg" alt="Mercedes-AMG A 45 S (W177)"/>
+          <img src="assets/amg/amg-a45s-w177.jpg" alt="Mercedes-AMG A 45 S (W177)" onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>AMG A45 S</strong>
             <p class="muted">Record-breaking 2.0L turbo.</p>
@@ -300,7 +293,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/amg/amg-gt-4door-x290.jpg" alt="Mercedes-AMG GT 4-Door (X290)"/>
+          <img src="assets/amg/amg-gt-4door-x290.jpg" alt="Mercedes-AMG GT 4-Door (X290)" onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>AMG GT 4-Door</strong>
             <p class="muted">Supercar soul, 4-seat practicality.</p>
@@ -316,7 +309,8 @@
       <p class="muted">Genuine add-ons and care plans for peace of mind.</p>
       <div class="grid">
         <div class="card">
-          <img src="/assets/accessories/amg-floor-mats.jpg" alt="Genuine AMG Floor Mats"/>
+          <img src="assets/accessories/amg-floor-mats.jpg" alt="Genuine AMG Floor Mats"
+               onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>AMG Floor Mats (Set)</strong>
             <p class="muted">Premium velour, red stitching.</p>
@@ -324,7 +318,8 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/accessories/19in-alloy-rim.jpg" alt="Mercedes Genuine 19-inch Alloy Rim"/>
+          <img src="assets/accessories/19in-alloy-rim.jpg" alt="Mercedes Genuine 19-inch Alloy Rim"
+               onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>19-inch Alloy Rim</strong>
             <p class="muted">Twin-spoke, diamond-cut finish.</p>
@@ -332,7 +327,8 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/accessories/breathable-car-cover.jpg" alt="Mercedes Car Cover"/>
+          <img src="assets/accessories/breathable-car-cover.jpg" alt="Mercedes Car Cover"
+               onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>Breathable Car Cover</strong>
             <p class="muted">Indoor dust protection, custom fit.</p>
@@ -340,7 +336,8 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/accessories/service-plan.jpg" alt="Mercedes Service Plan"/>
+          <img src="assets/accessories/service-plan.jpg" alt="Mercedes Service Plan"
+               onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>2-Year Service Plan</strong>
             <p class="muted">Scheduled maintenance, OEM parts.</p>
@@ -348,7 +345,8 @@
           </div>
         </div>
         <div class="card">
-          <img src="/assets/accessories/detailing.jpg" alt="AMG Detailing"/>
+          <img src="assets/accessories/detailing.jpg" alt="AMG Detailing"
+               onerror="this.onerror=null;this.src='assets/_placeholder-mb.jpg'">
           <div class="body">
             <strong>AMG Detailing Package</strong>
             <p class="muted">Ceramic coat, interior deep clean.</p>
@@ -358,7 +356,7 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ABOUT / CONTACT / TERMS / PRIVACY (unchanged) -->
     <section id="about" class="cols">
       <div class="static">
         <h2>About Us</h2>
@@ -377,7 +375,6 @@
       </aside>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact">
       <h2>Contact Us</h2>
       <p class="muted">Have a question? Send a message and we’ll get back to you within 24 hours.</p>
@@ -395,19 +392,16 @@
       </div>
     </section>
 
-    <!-- TERMS -->
     <section id="terms">
       <h2>Terms & Conditions</h2>
       <div class="card" style="padding:16px">
         <p><strong>Academic Demo:</strong> This website is a student project for AUD Comp101. No payments or deliveries are processed. All prices shown are illustrative. Vehicle availability, specifications, and pricing may vary by market.</p>
-        <p><strong>Intellectual Property:</strong> Mercedes-Benz and AMG are trademarks of their respective owners. Images are sourced from official Mercedes-Benz media/press resources and used for educational demonstration (non-commercial) only.</p>
+        <p><strong>Intellectual Property:</strong> Mercedes-Benz and AMG are trademarks of their respective owners. Images should be sourced from official Mercedes-Benz media/press resources and used for educational demonstration (non-commercial) only.</p>
         <p><strong>Use of Content:</strong> Do not reuse outside coursework without permission. Cite image set titles and URLs in your report submission.</p>
         <p><strong>Limitation of Liability:</strong> Information is provided “as is” without warranties. By using this site, you acknowledge it is for coursework only.</p>
-        <p class="notice">Reference this section in your report under: “Images sourced from official Mercedes-Benz media portals; used for non-commercial educational purposes.”</p>
       </div>
     </section>
 
-    <!-- PRIVACY -->
     <section id="privacy">
       <h2>Privacy Policy</h2>
       <div class="card" style="padding:16px">
@@ -427,6 +421,11 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Developer helper: log any missing images to console for quick fixes
+    document.querySelectorAll('img').forEach(img=>{
+      img.addEventListener('error', ()=>console.warn('Missing image:', img.getAttribute('src')));
+    });
   </script>
 </body>
 </html>
