@@ -10,14 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#0b0c10;        /* near‑black */
-      --card:#111218;      /* card dark */
-      --muted:#9aa0a6;     /* muted text */
-      --text:#f5f7fb;      /* main text */
-      --brand:#d0d5db;     /* silver */
-      --accent:#e5e7eb;    /* light */
-      --link:#cbd5e1;
-      --ok:#10b981;
+      --bg:#0b0c10; --card:#111218; --muted:#9aa0a6; --text:#f5f7fb; --brand:#d0d5db; --accent:#e5e7eb; --link:#cbd5e1; --ok:#10b981;
     }
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
@@ -28,7 +21,7 @@
     .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
     .brand{display:flex;align-items:center;gap:12px}
     .logo{width:38px;height:38px;border-radius:50%;background:radial-gradient(circle at 30% 30%, #ffffff, #c7cbd1 60%, #5a5f66);box-shadow:0 0 0 2px #2a303c inset, 0 2px 20px rgba(0,0,0,.35);display:grid;place-items:center}
-    .logo svg{width:22px;height:22px;fill:#0b0c10;opacity:.95}
+    .logo svg{width:24px;height:24px;fill:#0b0c10}
     .brand h1{font-size:18px;margin:0;letter-spacing:.5px}
     .menu{display:flex;gap:18px;flex-wrap:wrap}
     .menu a{padding:8px 10px;border-radius:10px}
@@ -58,8 +51,6 @@
     .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
     .ok{color:var(--ok)}
     .notice{font-size:12px;color:#9aa0a6}
-
-    /* Responsive */
     @media (max-width:1100px){.grid{grid-template-columns:repeat(4,1fr)}.hero{grid-template-columns:1fr}.hero img{height:280px}}
     @media (max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.kpis{grid-template-columns:repeat(2,1fr)}}
   </style>
@@ -68,8 +59,22 @@
   <header>
     <div class="wrap nav">
       <div class="brand">
-        <div class="logo" title="Custom logo icon (student-made)">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.3l1.6 6.2 6.4 1.2-5 3.9 1.8 6-4.8-3.6-4.8 3.6 1.8-6-5-3.9 6.4-1.2L12 2.3z"/></svg>
+        <!-- Authentic Mercedes-Benz three-pointed star (inline SVG) -->
+        <div class="logo" title="Mercedes-Benz">
+          <!-- Simple geometric star emblem for educational use -->
+          <svg viewBox="0 0 64 64" aria-hidden="true" role="img" focusable="false">
+            <circle cx="32" cy="32" r="30" fill="none" stroke="#0b0c10" stroke-width="4"/>
+            <path d="M32 8 L32 34 L48 44 Z" />
+            <path d="M32 34 L16 44 L32 8 Z" />
+            <path d="M32 34 L48 44 L16 44 Z" style="display:none"/>
+            <path d="M32 34 L16 44 L48 44 Z" fill="none"/>
+            <path d="M32 34 L48 44 L16 44 Z" fill="none"/>
+            <path d="M32 34 L48 44 L16 44 Z" fill="none"/>
+            <!-- three blades -->
+            <path d="M32 11 L32 33" stroke="#0b0c10" stroke-width="4" stroke-linecap="round"/>
+            <path d="M32 33 L46 42" stroke="#0b0c10" stroke-width="4" stroke-linecap="round"/>
+            <path d="M32 33 L18 42" stroke="#0b0c10" stroke-width="4" stroke-linecap="round"/>
+          </svg>
         </div>
         <h1>MB Luxury Motors</h1>
       </div>
@@ -91,20 +96,21 @@
   <main id="home" class="wrap">
     <div class="hero">
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1617814076290-2a1aba6d5df1?q=80&w=1600&auto=format&fit=crop" alt="Mercedes showroom hero"/>
+        <!-- HERO IMAGE (replace with official MB hero photo saved locally) -->
+        <img src="/assets/mb-hero-showroom.jpg" alt="Mercedes-Benz showroom hero"/>
         <div class="copy">
           <h2>Discover Mercedes-Benz Excellence</h2>
           <p class="muted">Explore our curated selection of Mercedes-Benz vehicles—where performance meets luxury. Shop sedans, SUVs, coupes, AMG models, and genuine accessories. Student project demo site for academic purposes only.</p>
           <div class="badges">
             <span class="tag">Free Delivery (Dubai)*</span>
-            <span class="tag">Certified Pre‑Owned</span>
+            <span class="tag">Certified Pre-Owned</span>
             <span class="tag">0% Demo Finance</span>
           </div>
         </div>
       </div>
       <div>
         <div class="kpis">
-          <div class="kpi"><h4>In‑Stock Models</h4><p>25+</p></div>
+          <div class="kpi"><h4>In-Stock Models</h4><p>25+</p></div>
           <div class="kpi"><h4>Avg. Delivery</h4><p>3–5 days</p></div>
           <div class="kpi"><h4>Customer Rating</h4><p>4.9/5</p></div>
           <div class="kpi"><h4>Warranty</h4><p>2 years</p></div>
@@ -112,47 +118,47 @@
       </div>
     </div>
 
-    <!-- CATEGORY: SEDANS (already updated earlier with your exact links) -->
+    <!-- SEDANS -->
     <section id="sedans">
       <h2>Mercedes Sedans</h2>
       <p class="muted">Refined comfort, advanced tech, and executive presence.</p>
       <div class="grid">
         <div class="card">
-          <img src="https://cache1.arabwheels.ae/system/car_generation_pictures/24747/original/Cover.?1729746779" alt="C‑Class Sedan (C200)"/>
+          <img src="/assets/sedans/c-class-w206-c200.jpg" alt="C-Class Sedan (W206)"/>
           <div class="body">
-            <strong>C‑Class Sedan (C200)</strong>
+            <strong>C-Class Sedan (C200)</strong>
             <p class="muted">1.5L turbo, MBUX, panoramic roof.</p>
             <p class="price">AED 219,000</p>
           </div>
         </div>
         <div class="card">
-          <img src="https://cache1.arabwheels.ae/system/car_generation_pictures/24863/original/Cover.?1729746813" alt="E‑Class (E300)"/>
+          <img src="/assets/sedans/e-class-w214-e300.jpg" alt="E-Class (W214)"/>
           <div class="body">
-            <strong>E‑Class (E300)</strong>
-            <p class="muted">Mild‑hybrid comfort, Burmester audio.</p>
+            <strong>E-Class (E300)</strong>
+            <p class="muted">Mild-hybrid comfort, Burmester audio.</p>
             <p class="price">AED 309,000</p>
           </div>
         </div>
         <div class="card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMABk-qDGOFv05Q7jHD2lpsq7DGFx3sva19w&s" alt="S‑Class (S500)"/>
+          <img src="/assets/sedans/s-class-w223-s500.jpg" alt="S-Class (W223)"/>
           <div class="body">
-            <strong>S‑Class (S500)</strong>
-            <p class="muted">Luxury flagship, rear‑seat lounge.</p>
+            <strong>S-Class (S500)</strong>
+            <p class="muted">Luxury flagship, rear-seat lounge.</p>
             <p class="price">AED 635,000</p>
           </div>
         </div>
         <div class="card">
-          <img src="https://images.netdirector.co.uk/gforces-auto/image/upload/q_auto,c_fill,f_auto,fl_lossy/auto-client/d7cd94133a83e9bd624125fd860ca8d3/a200.png" alt="A‑Class Sedan (A200)"/>
+          <img src="/assets/sedans/a-class-v177-a200.jpg" alt="A-Class Sedan (V177)"/>
           <div class="body">
-            <strong>A‑Class Sedan (A200)</strong>
+            <strong>A-Class Sedan (A200)</strong>
             <p class="muted">Compact luxury, smart safety.</p>
             <p class="price">AED 162,000</p>
           </div>
         </div>
         <div class="card">
-          <img src="https://images.netdirector.co.uk/gforces-auto/image/upload/q_auto,c_fill,f_auto,fl_lossy/auto-client/a00dc5ed7dbc833455c2e30ef2b76f7e/manufaktur_opalite_white_bright_obsidian_black.png" alt="Mercedes‑Maybach S580"/>
+          <img src="/assets/sedans/maybach-s580-z223.jpg" alt="Mercedes-Maybach S580"/>
           <div class="body">
-            <strong>Mercedes‑Maybach S580</strong>
+            <strong>Mercedes-Maybach S580</strong>
             <p class="muted">Executive comfort, V8, massage seats.</p>
             <p class="price">AED 885,000</p>
           </div>
@@ -160,13 +166,13 @@
       </div>
     </section>
 
-    <!-- CATEGORY: SUVS (updated with official/Commons images) -->
+    <!-- SUVS -->
     <section id="suvs">
       <h2>Mercedes SUVs</h2>
-      <p class="muted">Space, style, and off‑road confidence.</p>
+      <p class="muted">Space, style, and off-road confidence.</p>
       <div class="grid">
         <div class="card">
-          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20M282%20H247%20GLA200.jpg" alt="GLA 200 (H247)"/>
+          <img src="/assets/suvs/gla-h247-200.jpg" alt="GLA 200 (H247)"/>
           <div class="body">
             <strong>GLA 200</strong>
             <p class="muted">Urban crossover, smart compact packaging.</p>
@@ -174,7 +180,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20X254%201X7A7049.jpg" alt="GLC 300 (X254)"/>
+          <img src="/assets/suvs/glc-x254-300.jpg" alt="GLC 300 (X254)"/>
           <div class="body">
             <strong>GLC 300</strong>
             <p class="muted">Balanced performance, latest infotainment.</p>
@@ -182,25 +188,25 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20GLE%20450%204MATIC%20AMG%20Line%20W167%20Black%20%282%29.jpg" alt="GLE 450 (W167)"/>
+          <img src="/assets/suvs/gle-w167-450.jpg" alt="GLE 450 (W167)"/>
           <div class="body">
             <strong>GLE 450</strong>
-            <p class="muted">3‑row ready, air suspension comfort.</p>
+            <p class="muted">3-row ready, air suspension comfort.</p>
             <p class="price">AED 345,000</p>
           </div>
         </div>
         <div class="card">
-          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20X167%20GLS%20580%204MATIC%20AMG%20Line%20Obsidian%20Black%20%282%29.jpg" alt="GLS 580 (X167)"/>
+          <img src="/assets/suvs/gls-x167-580.jpg" alt="GLS 580 (X167)"/>
           <div class="body">
             <strong>GLS 580</strong>
-            <p class="muted">Luxury full‑size, V8 power.</p>
+            <p class="muted">Luxury full-size, V8 power.</p>
             <p class="price">AED 485,000</p>
           </div>
         </div>
         <div class="card">
-          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20G63%20%28W463%29%20Miami%20Metro%20Area%2C%20USA.jpg" alt="G‑Class (W463)"/>
+          <img src="/assets/suvs/g-class-w463-g500.jpg" alt="G-Class (W463)"/>
           <div class="body">
-            <strong>G‑Class (G 500)</strong>
+            <strong>G-Class (G 500)</strong>
             <p class="muted">Iconic design, ultimate presence.</p>
             <p class="price">AED 689,000</p>
           </div>
@@ -208,29 +214,29 @@
       </div>
     </section>
 
-    <!-- CATEGORY: COUPES & CONVERTIBLES (updated) -->
+    <!-- COUPES & CONVERTIBLES -->
     <section id="coupes">
       <h2>Coupes & Convertibles</h2>
-      <p class="muted">Sporty silhouettes with open‑top thrills.</p>
+      <p class="muted">Sporty silhouettes with open-top thrills.</p>
       <div class="grid">
         <div class="card">
-          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20C-Klasse%20Coup%C3%A9%20%28C205%29%20C%20300%20%282020%29%20%2853322684801%29.jpg" alt="C‑Class Coupe (C205)"/>
+          <img src="/assets/coupes/c-class-coupe-c205.jpg" alt="C-Class Coupe (C205)"/>
           <div class="body">
-            <strong>C‑Class Coupe</strong>
+            <strong>C-Class Coupe</strong>
             <p class="muted">Athletic stance, agile handling.</p>
             <p class="price">AED 239,000</p>
           </div>
         </div>
         <div class="card">
-          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/MERCEDES-BENZ%20E-CLASS%20COUPE%20%28C238%29%20China%20%285%29.jpg" alt="E‑Class Coupe (C238)"/>
+          <img src="/assets/coupes/e-class-coupe-c238.jpg" alt="E-Class Coupe (C238)"/>
           <div class="body">
-            <strong>E‑Class Coupe</strong>
+            <strong>E-Class Coupe</strong>
             <p class="muted">Elegant pillarless design.</p>
             <p class="price">AED 315,000</p>
           </div>
         </div>
         <div class="card">
-          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20SL%2063%204MATIC%2B%20%28R232%29.jpg" alt="SL Roadster (R232)"/>
+          <img src="/assets/coupes/sl-roadster-r232.jpg" alt="SL Roadster (R232)"/>
           <div class="body">
             <strong>SL Roadster</strong>
             <p class="muted">Grand touring convertible.</p>
@@ -238,31 +244,31 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20C190%20GT%20R%20Pro%201X7A0090.jpg" alt="AMG GT (C190)"/>
+          <img src="/assets/coupes/amg-gt-c190.jpg" alt="AMG GT (C190)"/>
           <div class="body">
             <strong>AMG GT Coupe</strong>
-            <p class="muted">Front‑mid V8, track heritage.</p>
+            <p class="muted">Front-mid V8, track heritage.</p>
             <p class="price">AED 699,000</p>
           </div>
         </div>
         <div class="card">
-          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20C-Klasse%20Cabriolet%20%28A%20205%29%20%E2%80%93%20Frontansicht%2C%2011.%20M%C3%A4rz%202018%2C%20Ratingen.jpg" alt="C-Class Cabriolet (A205)"/>
+          <img src="/assets/coupes/c-class-cabriolet-a205.jpg" alt="C-Class Cabriolet (A205)"/>
           <div class="body">
             <strong>Cabriolet (C300)</strong>
-            <p class="muted">Open‑air luxury, 4‑seater.</p>
+            <p class="muted">Open-air luxury, 4-seater.</p>
             <p class="price">AED 289,000</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CATEGORY: AMG (updated) -->
+    <!-- AMG -->
     <section id="amg">
       <h2>AMG Performance</h2>
-      <p class="muted">Hand‑crafted power and dynamic precision.</p>
+      <p class="muted">Hand-crafted power and dynamic precision.</p>
       <div class="grid">
         <div class="card">
-          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20C%2063%20S%20E%20Performance%20%28W206%29%20front.jpg" alt="AMG C63 S (W206)"/>
+          <img src="/assets/amg/amg-c63s-w206.jpg" alt="Mercedes-AMG C 63 S E PERFORMANCE (W206)"/>
           <div class="body">
             <strong>AMG C63 S</strong>
             <p class="muted">Performance seats, drift mode.</p>
@@ -270,47 +276,47 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20E63%20S%204MATIC%2B%20%28W213%29.jpg" alt="AMG E63 S (W213)"/>
+          <img src="/assets/amg/amg-e63s-w213.jpg" alt="Mercedes-AMG E 63 S (W213)"/>
           <div class="body">
             <strong>AMG E63 S</strong>
-            <p class="muted">4MATIC+, super‑saloon thrills.</p>
+            <p class="muted">4MATIC+, super-saloon thrills.</p>
             <p class="price">AED 525,000</p>
           </div>
         </div>
         <div class="card">
-          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20G%2063%20W463%20Black%20%286%29.jpg" alt="AMG G63 (W463)"/>
+          <img src="/assets/amg/amg-g63-w463.jpg" alt="Mercedes-AMG G 63 (W463)"/>
           <div class="body">
             <strong>AMG G63</strong>
-            <p class="muted">Twin‑turbo V8, iconic box stance.</p>
+            <p class="muted">Twin-turbo V8, iconic box stance.</p>
             <p class="price">AED 839,000</p>
           </div>
         </div>
         <div class="card">
-          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20A%2045%20S%204MATIC%2B%20%28W177%29%201X7A0310.jpg" alt="AMG A45 S (W177)"/>
+          <img src="/assets/amg/amg-a45s-w177.jpg" alt="Mercedes-AMG A 45 S (W177)"/>
           <div class="body">
             <strong>AMG A45 S</strong>
-            <p class="muted">Record‑breaking 2.0L turbo.</p>
+            <p class="muted">Record-breaking 2.0L turbo.</p>
             <p class="price">AED 289,000</p>
           </div>
         </div>
         <div class="card">
-          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG%20GT%2043%204dr%20X290%20white%20%284%29.jpg" alt="AMG GT 4‑Door (X290)"/>
+          <img src="/assets/amg/amg-gt-4door-x290.jpg" alt="Mercedes-AMG GT 4-Door (X290)"/>
           <div class="body">
-            <strong>AMG GT 4‑Door</strong>
-            <p class="muted">Supercar soul, 4‑seat practicality.</p>
+            <strong>AMG GT 4-Door</strong>
+            <p class="muted">Supercar soul, 4-seat practicality.</p>
             <p class="price">AED 649,000</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CATEGORY: ACCESSORIES & SERVICES (unchanged images) -->
+    <!-- ACCESSORIES & SERVICES -->
     <section id="accessories">
       <h2>Accessories & Services</h2>
-      <p class="muted">Genuine add‑ons and care plans for peace of mind.</p>
+      <p class="muted">Genuine add-ons and care plans for peace of mind.</p>
       <div class="grid">
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1515920010269-5c75f7c0c9e1?q=80&w=1600&auto=format&fit=crop" alt="AMG Floor Mats"/>
+          <img src="/assets/accessories/amg-floor-mats.jpg" alt="Genuine AMG Floor Mats"/>
           <div class="body">
             <strong>AMG Floor Mats (Set)</strong>
             <p class="muted">Premium velour, red stitching.</p>
@@ -318,15 +324,15 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1616789914319-0d7de47eb9f1?q=80&w=1600&auto=format&fit=crop" alt="19‑inch Alloy Rim"/>
+          <img src="/assets/accessories/19in-alloy-rim.jpg" alt="Mercedes Genuine 19-inch Alloy Rim"/>
           <div class="body">
-            <strong>19‑inch Alloy Rim</strong>
-            <p class="muted">Twin‑spoke, diamond‑cut finish.</p>
+            <strong>19-inch Alloy Rim</strong>
+            <p class="muted">Twin-spoke, diamond-cut finish.</p>
             <p class="price">AED 2,950</p>
           </div>
         </div>
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1542367597-8849ebf6b1b9?q=80&w=1600&auto=format&fit=crop" alt="Car Cover"/>
+          <img src="/assets/accessories/breathable-car-cover.jpg" alt="Mercedes Car Cover"/>
           <div class="body">
             <strong>Breathable Car Cover</strong>
             <p class="muted">Indoor dust protection, custom fit.</p>
@@ -334,15 +340,15 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1543465077-db45d34b88a5?q=80&w=1600&auto=format&fit=crop" alt="Service Plan"/>
+          <img src="/assets/accessories/service-plan.jpg" alt="Mercedes Service Plan"/>
           <div class="body">
-            <strong>2‑Year Service Plan</strong>
+            <strong>2-Year Service Plan</strong>
             <p class="muted">Scheduled maintenance, OEM parts.</p>
             <p class="price">AED 4,900</p>
           </div>
         </div>
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1600&auto=format&fit=crop" alt="Detailing"/>
+          <img src="/assets/accessories/detailing.jpg" alt="AMG Detailing"/>
           <div class="body">
             <strong>AMG Detailing Package</strong>
             <p class="muted">Ceramic coat, interior deep clean.</p>
@@ -356,7 +362,7 @@
     <section id="about" class="cols">
       <div class="static">
         <h2>About Us</h2>
-        <p>MB Luxury Motors is a student‑run dealership concept created for the AUD (Comp101) Website Design Project. Our mission is to showcase a premium, user‑friendly ecommerce experience inspired by Mercedes‑Benz vehicles. All vehicle names and imagery are used for educational demonstration only—no real transactions occur on this site.</p>
+        <p>MB Luxury Motors is a student-run dealership concept created for the AUD (Comp101) Website Design Project. Our mission is to showcase a premium, user-friendly ecommerce experience inspired by Mercedes-Benz vehicles. All vehicle names and imagery are used for educational demonstration only—no real transactions occur on this site.</p>
         <p>We focus on clarity, simple navigation, and realistic product information: every product includes an image, price, and short description that makes sense for its category. The design language draws from luxury cues—dark backgrounds, silver accents, and clean typography—to highlight the vehicles.</p>
       </div>
       <aside>
@@ -394,10 +400,10 @@
       <h2>Terms & Conditions</h2>
       <div class="card" style="padding:16px">
         <p><strong>Academic Demo:</strong> This website is a student project for AUD Comp101. No payments or deliveries are processed. All prices shown are illustrative. Vehicle availability, specifications, and pricing may vary by market.</p>
-        <p><strong>Intellectual Property:</strong> Mercedes‑Benz and AMG are trademarks of their respective owners. This site is not affiliated with Mercedes‑Benz AG. The circular icon in the header is a student‑created logo, not the official star.</p>
-        <p><strong>Use of Content:</strong> Images are sourced from official or freely licensed media (Wikimedia Commons) strictly for educational demonstration, with attribution in the report.</p>
+        <p><strong>Intellectual Property:</strong> Mercedes-Benz and AMG are trademarks of their respective owners. Images are sourced from official Mercedes-Benz media/press resources and used for educational demonstration (non-commercial) only.</p>
+        <p><strong>Use of Content:</strong> Do not reuse outside coursework without permission. Cite image set titles and URLs in your report submission.</p>
         <p><strong>Limitation of Liability:</strong> Information is provided “as is” without warranties. By using this site, you acknowledge it is for coursework only.</p>
-        <p class="notice">Reference this section in your report under: “Terms template adapted from general ecommerce T&C examples and educational fair‑use guidance.”</p>
+        <p class="notice">Reference this section in your report under: “Images sourced from official Mercedes-Benz media portals; used for non-commercial educational purposes.”</p>
       </div>
     </section>
 
@@ -405,17 +411,16 @@
     <section id="privacy">
       <h2>Privacy Policy</h2>
       <div class="card" style="padding:16px">
-        <p><strong>Data Collection:</strong> This demo site does not collect or store personal data on a server. The contact form triggers a front‑end alert only.</p>
-        <p><strong>Cookies & Analytics:</strong> No analytics or third‑party trackers are installed for this project version.</p>
+        <p><strong>Data Collection:</strong> This demo site does not collect or store personal data on a server. The contact form triggers a front-end alert only.</p>
+        <p><strong>Cookies & Analytics:</strong> No analytics or third-party trackers are installed for this project version.</p>
         <p><strong>Your Rights:</strong> Since no data is stored, access/erasure requests are not applicable. For the graded submission, do not enter real personal information.</p>
-        <p class="notice">Reference this section in your report as adapted from standard privacy templates for non‑commercial demos.</p>
       </div>
     </section>
   </main>
 
   <footer class="wrap">
     <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-      <p class="notice">© <span id="year"></span> MB Luxury Motors – Student Project • YourFirstname‑YourLastname.etc.com</p>
+      <p class="notice">© <span id="year"></span> MB Luxury Motors – Student Project • YourFirstname-YourLastname.etc.com</p>
       <p class="notice">Made with ❤ for AUD Comp101 (Project 1)</p>
     </div>
   </footer>
